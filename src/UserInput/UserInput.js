@@ -2,7 +2,7 @@ import React from 'react';
 import './Users.css';
 
 
-const UserInput = (props) => {
+const userInput = (props) => {
     return (
         <div>
             <lable className='UserInput-blue'>Put text here:</lable>
@@ -14,4 +14,4 @@ const UserInput = (props) => {
     )
 };
 
-export default UserInput;
+export default userInput;

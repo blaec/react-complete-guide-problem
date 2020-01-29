@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
-import UserInput from './UserInput/UserInput'
-import UserOutput from './UserOutput/UserOutput'
+import userInput from './UserInput/UserInput'
+import userOutput from './UserOutput/UserOutput'
 
 
 class App extends Component {
@@ -22,7 +22,7 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <UserOutput/>
+                <userOutput/>
                 <ol>
                     <li>x Create TWO new components: UserInput and UserOutput</li>
                     <li>x UserInput should hold an input element, UserOutput two paragraphs</li>
@@ -37,10 +37,10 @@ class App extends Component {
                     </li>
                 </ol>
                 <div className='UserOutput'>
-                    <UserOutput name='React'
+                    <userOutput name='React'
                                 name2={this.state.users[0].name2}/>
                 </div>
-                <UserInput name={this.state.users[0].name2}
+                <userInput name={this.state.users[0].name2}
                            changed={this.switchNameHandler}/>
             </div>
         );

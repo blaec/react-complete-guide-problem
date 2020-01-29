@@ -1,7 +1,7 @@
 import React from 'react';
 import '../UserInput/Users.css';
 
-const UserOutput = (props) => {
+const userOutput = (props) => {
     return (
         <div>
             <p>first paragraph with name='{props.name2}'</p>
@@ -10,4 +10,4 @@ const UserOutput = (props) => {
     )
 };
 
-export default UserOutput;
+export default userOutput;

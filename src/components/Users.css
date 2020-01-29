@@ -1,0 +1,26 @@
+.UserInput-input {
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    border: 1px solid #ccc!important;
+}
+
+.UserInput-border {
+    border: 1px solid #ccc!important;
+}
+
+.UserInput-blue {
+    color: #2196F3!important;
+    font-size: x-small;
+}
+
+.UserOutput {
+    text-indent: 50px;
+    text-align: justify;
+    letter-spacing: 3px;
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+    font-size: 15px;
+}

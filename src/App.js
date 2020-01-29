@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
-import userInput from './UserInput/UserInput'
-import userOutput from './UserOutput/UserOutput'
+import UserInput from './UserInput/UserInput'
+import UserOutput from './UserOutput/UserOutput'
 
 
 class App extends Component {
@@ -22,7 +22,7 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <userOutput/>
+                <UserOutput/>
                 <ol>
                     <li>x Create TWO new components: UserInput and UserOutput</li>
                     <li>x UserInput should hold an input element, UserOutput two paragraphs</li>
@@ -33,14 +33,14 @@ class App extends Component {
                     <li>x Pass the event-handler method reference to the UserInput component and bind it to the input-change event</li>
                     <li>x Ensure that the new input entered by the user overwrites the old username passed to UserOutput</li>
                     <li>x Add two-way-binding to your input (in UserInput) to also display the starting username</li>
-                    <li>Add styling of your choice to your components/ elements in the components - both with inline styles and stylesheets
+                    <li>x Add styling of your choice to your components/ elements in the components - both with inline styles and stylesheets
                     </li>
                 </ol>
                 <div className='UserOutput'>
-                    <userOutput name='React'
+                    <UserOutput name='React'
                                 name2={this.state.users[0].name2}/>
                 </div>
-                <userInput name={this.state.users[0].name2}
+                <UserInput name={this.state.users[0].name2}
                            changed={this.switchNameHandler}/>
             </div>
         );
